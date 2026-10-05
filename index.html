@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos by Hana — Diseño de Eventos Memorables</title>
+    <meta name="description" content="Eventos by Hana — Organización y decoración de eventos sociales, corporativos y temáticos. Cada detalle cuenta.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Eventos <span>by Hana</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                <li><a href="#contacto" class="nav-link nav-link--cta">Cotizar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════ HERO SECTION ═══════════════════ -->
+    <section class="hero" id="inicio">
+        <div class="hero__image-bg">
+            <img src="images/hero-bg.jpg" alt="Elegante decoración de evento con flores y velas" loading="eager">
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__content">
+            <p class="hero__tagline" data-animate="fade-up">Organización &amp; Decoración de Eventos</p>
+            <h1 class="hero__title" data-animate="fade-up" data-delay="200">
+                Creamos momentos<br>que se vuelven<br><em>eternos</em>
+            </h1>
+            <p class="hero__subtitle" data-animate="fade-up" data-delay="400">Cada detalle está pensado para que tu evento sea una experiencia inolvidable.</p>
+            <a href="#contacto" class="btn btn--primary hero__cta" data-animate="fade-up" data-delay="600">
+                <span>Cotizar mi Evento</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+        <div class="hero__scroll-indicator">
+            <span>Descubre más</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ SOBRE NOSOTROS ═══════════════════ -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__media" data-animate="fade-right">
+                    <div class="about__video-card">
+                        <video autoplay muted loop playsinline>
+                            <source src="Videos/igexport-DOl-VPljexL.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="about__accent-box"></div>
+                </div>
+                <div class="about__content" data-animate="fade-left">
+                    <span class="section-label">Nuestra Filosofía</span>
+                    <h2 class="section-title">Donde cada detalle<br>cuenta una <em>historia</em></h2>
+                    <div class="about__text">
+                        <p>En <strong>Eventos by Hana</strong>, creemos que cada celebración merece ser única y extraordinaria. Con una pasión profunda por la estética y la atención al detalle, transformamos espacios ordinarios en escenarios que despiertan emociones.</p>
+                        <p>Desde la elección de cada flor hasta la disposición de cada luz, nuestro compromiso es crear ambientes que reflejen tu personalidad y superen tus expectativas. No solo organizamos eventos — <em>diseñamos recuerdos</em>.</p>
+                    </div>
+                    <div class="about__stats">
+                        <div class="about__stat">
+                            <span class="about__stat-number" data-count="150">0</span><span class="about__stat-plus">+</span>
+                            <span class="about__stat-label">Eventos Realizados</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number" data-count="100">0</span><span class="about__stat-plus">%</span>
+                            <span class="about__stat-label">Clientes Satisfechos</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number" data-count="5">0</span><span class="about__stat-plus">+</span>
+                            <span class="about__stat-label">Años de Experiencia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ SERVICIOS ═══════════════════ -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">Lo Que Hacemos</span>
+                <h2 class="section-title">Nuestros <em>Servicios</em></h2>
+                <p class="section-subtitle">Cada servicio está diseñado con la misma dedicación: hacer de tu evento algo extraordinario.</p>
+            </div>
+            <div class="services__grid">
+                <!-- Servicio 1 -->
+                <article class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M32 8 L56 24 L56 48 L32 56 L8 48 L8 24 Z"/>
+                            <path d="M32 8 L32 56"/>
+                            <path d="M8 24 L56 24"/>
+                            <circle cx="32" cy="36" r="8"/>
+                        </svg>
+                    </div>
+                    <span class="service-card__number">01</span>
+                    <h3 class="service-card__title">Decoración Temática</h3>
+                    <p class="service-card__desc">Diseñamos ambientaciones únicas que transportan a tus invitados a un mundo de fantasía. Desde lo clásico hasta lo vanguardista, cada temática cobra vida con nuestra creatividad.</p>
+                    <ul class="service-card__features">
+                        <li>Diseño conceptual personalizado</li>
+                        <li>Montaje y desmontaje completo</li>
+                        <li>Elementos decorativos premium</li>
+                    </ul>
+                </article>
+                <!-- Servicio 2 -->
+                <article class="service-card" data-animate="fade-up" data-delay="150">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="32" cy="28" r="12"/>
+                            <path d="M20 28 Q20 48 32 52 Q44 48 44 28"/>
+                            <path d="M26 20 L32 8 L38 20"/>
+                            <circle cx="32" cy="28" r="4"/>
+                        </svg>
+                    </div>
+                    <span class="service-card__number">02</span>
+                    <h3 class="service-card__title">Eventos Sociales</h3>
+                    <p class="service-card__desc">Cumpleaños, aniversarios, baby showers y más. Celebramos los momentos más importantes de tu vida con la elegancia y el cariño que merecen.</p>
+                    <ul class="service-card__features">
+                        <li>Cumpleaños infantiles y adultos</li>
+                        <li>Aniversarios y bodas</li>
+                        <li>Baby showers y revelaciones</li>
+                    </ul>
+                </article>
+                <!-- Servicio 3 -->
+                <article class="service-card" data-animate="fade-up" data-delay="300">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="12" y="16" width="40" height="32" rx="2"/>
+                            <path d="M12 24 L52 24"/>
+                            <path d="M20 32 L44 32"/>
+                            <path d="M20 38 L36 38"/>
+                            <circle cx="44" cy="38" r="3"/>
+                        </svg>
+                    </div>
+                    <span class="service-card__number">03</span>
+                    <h3 class="service-card__title">Eventos Corporativos</h3>
+                    <p class="service-card__desc">Lanzamientos, galas, conferencias y activaciones de marca. Elevamos la imagen de tu empresa con montajes profesionales y sofisticados.</p>
+                    <ul class="service-card__features">
+                        <li>Branding y ambientación corporativa</li>
+                        <li>Coordinación logística integral</li>
+                        <li>Activaciones de marca</li>
+                    </ul>
+                </article>
+                <!-- Servicio 4 -->
+                <article class="service-card" data-animate="fade-up" data-delay="450">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="16" y="28" width="32" height="24" rx="2"/>
+                            <path d="M16 36 L48 36"/>
+                            <circle cx="24" cy="20" r="6"/>
+                            <circle cx="40" cy="22" r="4"/>
+                            <circle cx="32" cy="18" r="5"/>
+                            <path d="M28 44 L28 48"/>
+                            <path d="M36 44 L36 48"/>
+                        </svg>
+                    </div>
+                    <span class="service-card__number">04</span>
+                    <h3 class="service-card__title">Candy Bars & Mesas de Dulces</h3>
+                    <p class="service-card__desc">Mesas de dulces espectaculares que son el centro de atención. Diseñadas con estilo, llenas de sabor y perfectamente integradas a la temática de tu evento.</p>
+                    <ul class="service-card__features">
+                        <li>Diseño visual y cromático</li>
+                        <li>Selección gourmet de dulces</li>
+                        <li>Packaging personalizado</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ GALERÍA ═══════════════════ -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">Nuestro Portafolio</span>
+                <h2 class="section-title">Galería de <em>Inspiración</em></h2>
+                <p class="section-subtitle">Una muestra de los eventos que hemos tenido el privilegio de diseñar.</p>
+            </div>
+        </div>
+        <div class="gallery__showcase">
+            <div class="gallery__grid" data-animate="fade-up">
+                <!-- Video cards -->
+                <div class="gallery__item gallery__item--wide">
+                    <video autoplay muted loop playsinline>
+                        <source src="Videos/igexport-DaY9w_GqZ5W.mp4" type="video/mp4">
+                    </video>
+                    <div class="gallery__item-overlay">
+                        <span class="gallery__item-tag">Evento Destacado</span>
+                        <h4>Decoración Temática Premium</h4>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <video autoplay muted loop playsinline>
+                        <source src="Videos/igexport-DOl-VPljexL.mp4" type="video/mp4">
+                    </video>
+                    <div class="gallery__item-overlay">
+                        <span class="gallery__item-tag">Montaje</span>
+                        <h4>Atención al Detalle</h4>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <video autoplay muted loop playsinline>
+                        <source src="Videos/igexport-DYZK1dht6Nd.mp4" type="video/mp4">
+                    </video>
+                    <div class="gallery__item-overlay">
+                        <span class="gallery__item-tag">Celebración</span>
+                        <h4>Momentos Especiales</h4>
+                    </div>
+                </div>
+                <!-- Stock photo gallery items -->
+                <div class="gallery__item">
+                    <img src="images/gallery-1.jpg" alt="Celebración con globos y decoración festiva" loading="lazy">
+                    <div class="gallery__item-overlay">
+                        <span class="gallery__item-tag">Celebración</span>
+                        <h4>Ambientación Festiva</h4>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <img src="images/gallery-2.jpg" alt="Iluminación elegante de evento nocturno" loading="lazy">
+                    <div class="gallery__item-overlay">
+                        <span class="gallery__item-tag">Iluminación</span>
+                        <h4>Atmósferas Únicas</h4>
+                    </div>
+                </div>
+                <div class="gallery__item gallery__item--wide">
+                    <img src="images/gallery-3.jpg" alt="Evento con confeti y luces de celebración" loading="lazy">
+                    <div class="gallery__item-overlay">
+                        <span class="gallery__item-tag">Eventos</span>
+                        <h4>Momentos de Alegría</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ MARQUEE DIVIDER ═══════════════════ -->
+    <div class="marquee">
+        <div class="marquee__track">
+            <span>Bodas</span><span class="marquee__dot">✦</span>
+            <span>Cumpleaños</span><span class="marquee__dot">✦</span>
+            <span>Baby Showers</span><span class="marquee__dot">✦</span>
+            <span>Corporativos</span><span class="marquee__dot">✦</span>
+            <span>Candy Bars</span><span class="marquee__dot">✦</span>
+            <span>Aniversarios</span><span class="marquee__dot">✦</span>
+            <span>Galas</span><span class="marquee__dot">✦</span>
+            <span>Revelaciones</span><span class="marquee__dot">✦</span>
+            <!-- Duplicated for seamless loop -->
+            <span>Bodas</span><span class="marquee__dot">✦</span>
+            <span>Cumpleaños</span><span class="marquee__dot">✦</span>
+            <span>Baby Showers</span><span class="marquee__dot">✦</span>
+            <span>Corporativos</span><span class="marquee__dot">✦</span>
+            <span>Candy Bars</span><span class="marquee__dot">✦</span>
+            <span>Aniversarios</span><span class="marquee__dot">✦</span>
+            <span>Galas</span><span class="marquee__dot">✦</span>
+            <span>Revelaciones</span><span class="marquee__dot">✦</span>
+        </div>
+    </div>
+
+    <!-- ═══════════════════ TESTIMONIOS ═══════════════════ -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">Voces que Inspiran</span>
+                <h2 class="section-title">Lo que dicen<br>nuestros <em>clientes</em></h2>
+            </div>
+            <div class="testimonials__carousel" data-animate="fade-up">
+                <div class="testimonials__track" id="testimonialsTrack">
+                    <!-- Testimonio 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">★★★★★</div>
+                        <blockquote class="testimonial-card__quote">
+                            "Hana superó todas nuestras expectativas. Cada rincón de nuestra boda estaba decorado con un gusto exquisito. Nuestros invitados no dejaban de tomar fotos. ¡Fue mágico!"
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">MR</div>
+                            <div>
+                                <strong>María &amp; Roberto</strong>
+                                <span>Boda — Diciembre 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonio 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">★★★★★</div>
+                        <blockquote class="testimonial-card__quote">
+                            "Organizamos el cumpleaños de nuestra hija con el tema de princesas y quedó espectacular. La mesa de dulces fue la sensación. Profesionalismo y creatividad al máximo."
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">CL</div>
+                            <div>
+                                <strong>Carolina López</strong>
+                                <span>Cumpleaños — Agosto 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonio 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">★★★★★</div>
+                        <blockquote class="testimonial-card__quote">
+                            "Contratamos a Eventos by Hana para nuestro lanzamiento corporativo y el resultado fue impecable. La ambientación reflejó perfectamente nuestra marca. Totalmente recomendado."
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">AG</div>
+                            <div>
+                                <strong>Andrés García</strong>
+                                <span>Evento Corporativo — Junio 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonio 4 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">★★★★★</div>
+                        <blockquote class="testimonial-card__quote">
+                            "Mi baby shower fue un sueño hecho realidad. Hana entendió exactamente lo que quería y lo transformó en algo aún mejor. ¡Gracias por hacerme sentir tan especial!"
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">VP</div>
+                            <div>
+                                <strong>Valentina Pérez</strong>
+                                <span>Baby Shower — Marzo 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__controls">
+                    <button class="testimonials__btn testimonials__btn--prev" id="prevTestimonial" aria-label="Anterior">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </button>
+                    <div class="testimonials__dots" id="testimonialsDots"></div>
+                    <button class="testimonials__btn testimonials__btn--next" id="nextTestimonial" aria-label="Siguiente">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ FAQ ═══════════════════ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="faq__grid">
+                <div class="faq__header" data-animate="fade-right">
+                    <span class="section-label">Resolvemos tus Dudas</span>
+                    <h2 class="section-title">Preguntas<br><em>Frecuentes</em></h2>
+                    <p class="faq__intro">Todo lo que necesitas saber antes de dar el primer paso hacia tu evento soñado.</p>
+                </div>
+                <div class="faq__list" data-animate="fade-left">
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            <span>¿Con cuánta anticipación debo reservar mi evento?</span>
+                            <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                        </summary>
+                        <div class="faq__answer">
+                            <p>Recomendamos reservar con al menos 3 a 4 semanas de anticipación para eventos sociales, y 6 a 8 semanas para eventos corporativos o de gran formato. Sin embargo, siempre puedes consultarnos — hacemos lo posible por adaptarnos a tu agenda.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            <span>¿Qué incluye el servicio de decoración?</span>
+                            <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                        </summary>
+                        <div class="faq__answer">
+                            <p>Nuestro servicio incluye diseño conceptual personalizado, selección de materiales y elementos decorativos, montaje completo en el venue, supervisión durante el evento y desmontaje. Trabajamos con flores, telas, iluminación, mobiliario y elementos temáticos según tu visión.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            <span>¿Trabajan en cualquier tipo de venue o locación?</span>
+                            <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                        </summary>
+                        <div class="faq__answer">
+                            <p>¡Sí! Nos adaptamos a todo tipo de espacios: salones, jardines, terrazas, restaurantes, oficinas y más. Realizamos una visita previa al lugar para diseñar la propuesta ideal según las características del espacio.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            <span>¿Puedo personalizar completamente la temática?</span>
+                            <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                        </summary>
+                        <div class="faq__answer">
+                            <p>Absolutamente. Cada evento es único y diseñado desde cero según tus gustos, colores preferidos, temática y presupuesto. Nos encanta escuchar tus ideas y convertirlas en realidad, o proponerte conceptos creativos si prefieres dejarlo en nuestras manos.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            <span>¿Cuáles son las formas de pago?</span>
+                            <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                        </summary>
+                        <div class="faq__answer">
+                            <p>Aceptamos transferencias bancarias, efectivo y pagos electrónicos. Generalmente trabajamos con un anticipo del 50% al confirmar la reserva y el saldo restante antes del evento. Consulta por planes de pago disponibles.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ CONTACTO ═══════════════════ -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info" data-animate="fade-right">
+                    <span class="section-label">Hagamos Magia Juntos</span>
+                    <h2 class="section-title">Cotiza tu<br><em>Evento Soñado</em></h2>
+                    <p class="contact__desc">Cuéntanos sobre tu evento y te enviaremos una propuesta personalizada. Cada sueño merece hacerse realidad.</p>
+                    <div class="contact__details">
+                        <a href="https://www.instagram.com/eventosxhana/" target="_blank" rel="noopener" class="contact__social-link contact__social-link--ig">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="5"/>
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+                            </svg>
+                            <span>@eventosxhana</span>
+                        </a>
+                        <a href="https://wa.me/1234567890" target="_blank" rel="noopener" class="contact__social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 01-4.243-1.216l-.257-.154-2.871.853.853-2.871-.154-.257A8 8 0 1112 20z"/>
+                            </svg>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact__form-wrapper" data-animate="fade-left">
+                    <form class="contact__form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Nombre completo</label>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Correo electrónico</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder=" ">
+                                <label for="phone">Teléfono</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select id="eventType" name="eventType" required>
+                                <option value="" disabled selected>Tipo de evento</option>
+                                <option value="boda">Boda</option>
+                                <option value="cumpleanos">Cumpleaños</option>
+                                <option value="baby-shower">Baby Shower</option>
+                                <option value="corporativo">Evento Corporativo</option>
+                                <option value="aniversario">Aniversario</option>
+                                <option value="candy-bar">Candy Bar / Mesa de Dulces</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="eventDate" name="eventDate" placeholder=" ">
+                            <label for="eventDate">Fecha tentativa del evento</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                            <label for="message">Cuéntanos sobre tu evento soñado...</label>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <span>Enviar Cotización</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                        </button>
+                    </form>
+                    <div class="contact__form-success" id="formSuccess">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 12l3 3 5-5"/>
+                        </svg>
+                        <h3>¡Mensaje enviado!</h3>
+                        <p>Nos pondremos en contacto contigo pronto para hacer tu evento realidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">Eventos <span>by Hana</span></a>
+                    <p class="footer__tagline">Creamos momentos que se vuelven eternos.</p>
+                </div>
+                <div class="footer__links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#galeria">Galería</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/eventosxhana/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <circle cx="12" cy="12" r="5"/>
+                            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                            <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 01-4.243-1.216l-.257-.154-2.871.853.853-2.871-.154-.257A8 8 0 1112 20z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Eventos by Hana. Todos los derechos reservados.</p>
+                <p class="footer__credit">Diseñado con <span class="footer__heart">♥</span> para crear momentos inolvidables.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
